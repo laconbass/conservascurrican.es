@@ -22,7 +22,7 @@
     "marked": "0.2.8",
     "poet": "0.2.7",
     "iai-middleware": ">=0.0.3",
-    "iai-util": ">=0.0.4",
+    "iai-util": "0.0.4",
     "node-static": "0.6.4",
     "jade": "~0.32.0"
   }
