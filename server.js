@@ -13,6 +13,8 @@ var express = require( 'express' )
 //main.use( vhost( /^(pruebas|static)/, app_new ) );
 //main.use( vhost( /.*/, app_new ) );
 
-main.listen( 8080 );
+var PORT = process.env.PORT || 8080; 
 
-console.log( 'server listening on http://localhost:8080' );
+main.listen( PORT );
+
+console.log( 'server listening on http://localhost:%d', PORT );
