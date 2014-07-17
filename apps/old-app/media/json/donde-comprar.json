@@ -1,0 +1,27 @@
+{
+  "$": {
+    "h2": "@distribuidores_intro"
+    ,"ul": {
+      "@distribuidores": "li"
+    }
+  }
+  ,"blocks": {
+    "@distribuidores": {
+      "b": "@name, "
+      ,"a": {
+        "@": { "href": "tel:@telefono", "title": "Llamar a @name" }
+        ,"$": "@telefono"
+      }
+    }
+  }
+  ,"data": {
+    "title": "Dónde Comprar"
+    ,"distribuidores_intro": "Distribuidores (A Mariña de Lugo)"
+    ,"distribuidores": [
+      {
+        "name": "Pescados Framar"
+        ,"telefono": "687776670"
+      }
+    ]
+  }
+}

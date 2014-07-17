@@ -1,0 +1,74 @@
+//
+// COLORS
+
+// colores currican
+@logo-base: #13235b;
+@logo-cola: #007088;
+@logo-gris: #eae4da;
+@logo-gold: #b39b7a;
+@logo-gold: #cfb53b;
+@logo-area: #eace75;
+@lomos-aceite: #cf003d;
+@lomos-escabeche: #008b6c;
+@migas-aceite: #00a096;
+@cogote-aceite: #dfd200;
+@ventresca-aceite: #5e89c2;
+
+// color texto por defecto, bg selección texto
+//@sele-bg: #b3d4fc;
+
+// colores texto
+//@menu-fg: #fff;
+//@main-fg: #fff;
+@main-fg: desaturate(@logo-base, 25%);
+@sele-fg: @main-fg;
+@menu-link-fg: lighten(@logo-gold, 15%);
+@menu-link-hover-fg: @main-fg;
+@foot-fg: @logo-gris;
+
+// colores fondo
+@body-bg: desaturate(@logo-base, 50%);
+@head-bg: #afc6e9; // imaxe ola
+@menu-bg: desaturate(@logo-base, 10%);
+@menu-link-bg: desaturate(@ventresca-aceite, 4%);
+@menu-link-hover-bg: @logo-gold;
+@main-bg: desaturate(@logo-area, 20%); // textura area
+@section-bg: lighten(@main-bg, 18%);
+@sele-bg: darken(@section-bg, 5%);
+@foot-bg: fade(@ventresca-aceite, 50%);
+
+// Outros colores
+@producto-bg: fade(@logo-gris, 50%);
+
+//
+// TEMPOS TRANSICION
+@time: .5s;
+
+//
+// DIMENSIONS CORTE
+@base-width: 1000px;
+
+//
+// TIPOGRAFIAS
+
+// Logo Currican: Harrington, Lucida
+// Outras: [google] Fresca, Andika, Ubuntu, Stoke
+
+@menu-font: "Aladin";
+@head-2-font: "Harrington";
+@head-3-font: "Aladin";
+@main-font: "Fresca";
+
+@font-face{ 
+  font-family: "Harrington";
+  src: url(/extra/harrington/HARNGTON.eot?) format("eot")
+     , url(/extra/harrington/HARNGTON.woff) format("woff")
+     , url(/extra/harrington/HARNGTON.ttf) format("truetype")
+     , url(/extra/harrington/HARNGTON.svg#Harrington) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lucida";
+  src: url(/extra/LucidaCalligraphyItalic.ttf);
+}

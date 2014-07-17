@@ -1,0 +1,25 @@
+
+// inset, h-len, v-len, blur-radius, spread, color
+.box-shadow (...) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+// border-radius
+.border-radius(@radius: 10px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+//.transition (@property: all, @time: .5s, @function: ease) {
+.transition (@a: all .5s ease,...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}

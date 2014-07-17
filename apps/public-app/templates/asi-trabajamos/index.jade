@@ -1,0 +1,29 @@
+h2
+  - var c = (section_id == 'asi-trabajamos')? 'selected':''
+  a(href=section_url) El proceso productivo
+
+//- if ( !~Object.keys(section_data.galleries).indexOf(content_id) )
+
+each gallery, gallery_id in section_data.galleries
+  - var c = (content_id == gallery_id)? 'selected':''
+  article(id=gallery_id, class=c)
+    h3= gallery.title
+    p= gallery.desc
+    ol
+      each phase in gallery.data
+        li
+          h3= phase.title
+          ul
+            each step in phase.steps
+              li
+                img(src="/img/procesos/"+gallery_id+"/hd/"+step.img_src)
+                p= step.desc
+    hr
+
+p= section_data.intro
+nav
+  each gallery, gallery_id in section_data.galleries
+    - var c = (content_id == gallery_id)? 'selected':''
+    a(class=c, href=section_url+"/"+gallery_id)
+      h3= gallery.title
+      img(src=gallery.thumb)

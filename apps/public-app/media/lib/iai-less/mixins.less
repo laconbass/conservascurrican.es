@@ -1,0 +1,140 @@
+//
+// Grid helpers
+.wrapper(@mode, ...){
+  // HTML5 boilerplate "Clearfix" helper: contain floats
+  // For modern browsers
+  // 1. The space content is one way to avoid an Opera bug when the
+  //    `contenteditable` attribute is included anywhere else in the
+  //     document. Otherwise it causes space to appear at the top and
+  //     bottom of elements that receive the `clearfix` class.
+  //  2. The use of `table` rather than `block` is only necessary if
+  //     using `:before` to contain the top-margins of child elements.
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after { clear: both; }
+  display: block;
+  overflow: hidden;
+}
+.wrapper(@key, @w) when (isnumber(@w)) and (@key = flexible), (@key = fixed) {
+  width: @w;
+}
+.wrapper(absolute, @h: inherit) {
+  position: absolute;
+  overflow: visible;
+}
+.wrapper(@m, @w: "", @i: 0, @g: 0)
+  when (@w = inline), (@i = inline), (@g = inline) {
+  white-space: nowrap;
+}
+.wrapper(@m, @w: "", @i: 0, @g: 0)
+  when (@w = grid), (@i = grid), (@g = grid) {
+  position: relative;
+}
+
+//
+// Cells
+
+// margin, padding, number-of-cols, col-span (@s) or change the base size (total width of the parent)
+.cell(@m: 0, @p: 0, @n: 1, @s: 1, @b: 100%)
+  when (isnumber(@m)){
+  @u: (@b / @b);
+  margin-left: (@u * @m);
+  margin-top: @u * @m;
+  &:last-child { margin-bottom: @u * @m; }
+}
+.cell(@m: 0, @p: 0, @n: 1, @s: 1, @b: 100%)
+  when not (iskeyword(@m))
+  and (isnumber(@p)) {
+  @u: (@b / @b);
+  padding: (@u * @p); 
+}
+.cell(@m: 0, @p: 0, @n: 1, @s: 1, @b: 100%)
+  when not (iskeyword(@m)) {
+  float: left;
+}
+.cell(@m: 0, @p: 0, @n: 1, @s: 1, @b: 100%)
+  when not (iskeyword(@m))
+  and (@n > 0) {
+  width: ((@b - @m * (@n + 1) - @p * @n * 2) / @n * @s + (@s - 1) * @m);
+}
+// special inlined cell
+// Uses text-inline positioning rather than floating
+// using wrapper(inline) keeps all cells within the same line
+.cell(inline, @width: auto){
+  display: inline-block;
+  width: @width;
+  line-height: normal;
+  img { vertical-align: baseline; }
+}
+// special absolute cell
+// Use wrapper(grid) to create grids
+.cell(absolute, @w, @h) {
+  position: absolute;
+  width: @w;
+  height: @h;
+}
+.cell(right, ...) {
+  float: right;
+}
+
+//
+// Background helpers
+.bg-image(@url, @pos-h: center, @pos-v: center) {
+  background-image: url(@url);
+  background-repeat: no-repeat;
+  background-position: @pos-h @pos-v;
+}
+
+
+//
+// cross-brower propietary prefixes
+
+.border-radius(@radius: 10px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+//.transition (@property: all, @time: .5s, @function: ease) {
+.transition (@a: all .5s ease,...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -ms-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+// inset, h-len, v-len, blur-radius, spread, color
+.box-shadow (...) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+// scale(.1-2) rotate(45º) translateX() translateY() skewX() skewY()
+.transform (@s: 1, @r: 0deg, @tx: 0px, @ty: 0px, @sx: 0px, @sy: 0deg) {
+  -webkit-transform: scale(@s) rotate(@r) translateX(@tx) translateY(@ty) skewX(@sx) skewY(@sy);
+  -moz-transform: scale(@s) rotate(@r) translateX(@tx) translateY(@ty) skewX(@sx) skewY(@sy);
+  -ms-transform: scale(@s) rotate(@r) translateX(@tx) translateY(@ty) skewX(@sx) skewY(@sy);
+  -o-transform: scale(@s) rotate(@r) translateX(@tx) translateY(@ty) skewX(@sx) skewY(@sy);
+  transform: scale(@s) rotate(@r) translateX(@tx) translateY(@ty) skewX(@sx) skewY(@sy);
+}
+
+//
+// helps debugging queries
+.debug-msg (@text, @color: yellow) {
+  &::before {
+    content: @text;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    background: @color;
+    position: absolute; top: 0; left: 0; right: 0;
+    z-index: 99;
+  }
+}

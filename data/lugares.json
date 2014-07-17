@@ -1,0 +1,200 @@
+{
+  "tiendas": {
+    "caption": "Tiendas"
+    ,"intro_text": "Esta es la relación de tiendas en las que podrá encontrar nuestros productos, ordenada por provincias."
+    ,"fields": {
+      "address": "Dirección"
+      ,"zip": ""
+      ,"phone": "Teléfono"
+      ,"address2": "Dirección 2"
+      ,"zip2": ""
+      ,"phone2": "Teléfono 2"
+    }
+    ,"data": {
+      "Lugo": {
+        "sucursal": {
+          "name": "La Sucursal"
+          ,"address": "San Marcos, 1"
+          ,"zip": "27001 - Lugo"
+          ,"phone": "982241454"
+        }
+        ,"o-corgo": {
+          "name": "Áreas de servicio O Corgo"
+          ,"address": "Autovía A6, Km 485 (dirección Madrid y A Coruña)"
+          ,"zip": "Lugo"
+          ,"phone": "982300239"
+        }
+      }
+      ,"A Coruña": {
+        "pao-toxo": {
+          "name": "Pao de Toxo"
+          ,"address": "Plaza de Lugo, 23"
+          ,"zip": "15004 - A Coruña"
+          ,"phone": "981612910"
+        }
+        ,"lino": {
+          "name": "La tienda de Luno"
+          ,"address": "Novoa Santos, 36-38"
+          ,"zip": "15006 - A Coruña"
+          ,"phone": "981285474"
+        }
+        ,"valladares": {
+          "name": "Alimentación Valladares"
+          ,"address": "Avda. República del Salvador, 14"
+          ,"zip": "15701 - Santiago de Compostela"
+        }
+        ,"catrineta": {
+          "name": "Catrineta & Cía Conserveira de Compostela"
+          ,"address": "Ruela Altamira, 2"
+          ,"zip": "15704 - Santiago de Compostela"
+          ,"phone": "981577544"
+        }
+        ,"san-agustin": {
+          "name": "Mercado San Agustín"
+          ,"address": "Novo Perímetro, 10"
+          ,"zip": "15001 - A Coruña"
+        }
+      }
+      ,"Pontevedra": {
+        "juncal": {
+          "name": "Juncal Alimentación"
+          ,"address": "Peregrina, 9"
+          ,"zip": "36001 - Pontevedra"
+          ,"phone": "986861612"
+        }
+        ,"gourmet-gallego": {
+          "name": "El Gourmet Gallego"
+          ,"logo_src": "/img/logos/el-gourmet-gallego.jpg"
+          ,"address": "Esperanza s/n"
+          ,"zip": "36860 - Ponteareas"
+          ,"phone": "986641568"
+        }
+      }
+      ,"Madrid": {
+        "gold-gourmet": {
+          "name": "Gold Gourmet"
+          ,"logo_src": "/img/logos/gold-gourmet.png"
+          ,"address": "Ortega y Gasset, 85"
+          ,"zip": "28006 - Madrid"
+          ,"phone": "914020363"
+        }
+        ,"espanha-mesa": {
+          "name": "España en la mesa"
+          ,"logo_src": "/img/logos/espanha-mesa.jpg"
+          ,"address": "Guzmán el Bueno, 82"
+          ,"zip": "28003 - Madrid"
+          ,"phone": "915358878"
+        }
+        ,"juliana": {
+          "name": "Juliana Gourmet"
+          ,"address": "Claudio Coello, 111"
+          ,"zip": "Madrid"
+          ,"phone": "915783401"
+        }
+      }
+      ,"Asturias": {
+        "coalla": {
+          "name": "Coalla Gourmet"
+          ,"logo_src": "/img/logos/coalla-gourmet.jpg"
+          ,"address": "Uría, 4"
+          ,"zip": "33202 - Gijón"
+          ,"phone": "985363726"
+          ,"address2": "Munuza, 7"
+          ,"zip2": "33206 - Gijón"
+          ,"phone2": "985348400"
+        }
+        ,"905-taberna": {
+          "name": "905 Taberna-Tienda"
+          ,"address": "Trinidad, 6"
+          ,"zip": "33201 - Gijón"
+          ,"phone": "985098054"
+        }
+        ,"tiendina-esther": {
+          "name": "La tiendina de Esther"
+          ,"address": "Francisco de Paula Jovellanos, 4"
+          ,"zip": "33205 - Gijón"
+          ,"phone": "984397134"
+        }
+        ,"casa-lin": {
+          "name": "Casa Lin"
+          ,"address": "Avda. de Colón, 14"
+          ,"zip": "33000 - Oviedo"
+          ,"phone": "985274489"
+        }
+        ,"llantar-nel": {
+          "name": "El llantar de Nel"
+          ,"address": "Plaza Manuel Ibáñez, s/n"
+          ,"zip": "Colombre - Asturias"
+          ,"phone": "985412812"
+        }
+      }
+      ,"Valladolid": {
+        "punto-plato": {
+          "name": "Un punto en tu plato"
+          ,"address": "Ronda, 23"
+          ,"zip": "47420 - Iscar"
+          ,"phone": "9836612910"
+        }
+      }
+      ,"Zaragoza": {
+        "gusto-selectos": {
+          "name": "Buen Gusto Selectos"
+          ,"logo_src": "/img/logos/buen-gusto.jpg"
+          ,"address": "Plaza Ariño, 1"
+          ,"zip": "50003 - Zaragoza"
+          ,"phone": "876164661"
+        }
+      }
+      ,"Huesca": {
+        "delicias-ordesa": {
+          "name": "Delicias de Ordesa"
+          ,"address": "Avda. Ordesa, 4"
+          ,"zip": "22370 - Broto"
+        }
+      }
+    }
+  }
+  ,"distribuidores": {
+    "caption": "Distribuidores"
+    ,"intro_text": "Para compras al por mayor, puede contactar con cualquiera de nuestros distribuidores, dependiendo de la zona en que se encuentre."
+    ,"fields": {
+      "address": "Dirección"
+      ,"zip": ""
+      ,"phone": "Teléfono"
+      ,"email": "Email"
+    }
+    ,"data": {
+      "Madrid": {
+        "joalpesca": {
+          "name": "Joalpesca"
+          ,"logo_src": "/img/logos/joalpesca.png"
+          ,"phone": "915073192"
+          ,"address": "Mercamadrid, Nave de Pescados - Puesto 45ª"
+          ,"zip": "28053 - Madrid"
+        }
+        ,"eluz": {
+          "name": "Eluz Comercial Alimentaria"
+          ,"logo_src": "/img/logos/eluz-comercial-alimentaria.jpg"
+          ,"address": "Zona Madrid Norte"
+          ,"phone": "609202486"
+          ,"email": "comercial@eluzgourmet.com"
+        }
+      }
+      ,"A Mariña de Lugo": {
+        "framar": {
+          "name": "Pescados Framar"
+          ,"logo_src": "/img/logos/framar-400.png"
+          ,"phone": "687776670"
+        }
+      }
+      ,"A Coruña y Pontevedra": {
+        "helma": {
+          "name": "Helma Ibérica"
+          ,"address": "Lugar de Nespereira, 75"
+          ,"zip": "15883 - Luou, Teo (A Coruña)"
+          ,"phone": "981805702"
+        }
+      }
+    }
+  }
+}

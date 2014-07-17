@@ -1,0 +1,56 @@
+doctype 5
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+    title= settings.titulo
+    meta(name="description", content="Conservas Artesanas Curricán se dedica principalmente a la elaboración artesanal de conserva de bonito, siguiendo un método estrictamente manual, con materia prima procedente de las lonjas de Burela, Celeiro y San Ciprián.")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    block styles
+      each source in theme.stylesheets
+        link(rel="stylesheet", href=theme.url(source))
+
+    script.
+      var locals = !{ js_locals.dumpJSON() };
+      var iai = { env: locals.env };
+
+    script(src="/js/vendor/modernizr-2.6.2.min.js")
+
+  body
+    header
+      a(href="/", title="Inicio", target="_self")
+        h1 Curricán
+        h2 conservas tradicionales
+      nav
+        include mixins/link-list
+        mixin link-list(menu, '', section_name)
+
+    div(role="main")
+      block main_content
+        section.loading.hidden
+
+    footer
+      figure
+        address &copy; Conservas Artesanas Curricán S.L.
+        address P.I. Camba 27877 Xove  (Lugo)
+        a(href="tel:+34982596487") 982 59 64 84
+
+      figure#logos_subvencion
+        a(href="http://www.accioncosteira.es/?q=es/node/1484", target="_blank")
+          img(src="/img/logo-marinha-200.png")
+        a(href="http://www.medioruralemar.xunta.es/es/", target="_blank")
+          img(src="/img/logo-xunta-200.png")
+        a(href="http://www.magrama.gob.es/es/", target="_blank")
+          img(src="/img/logo-ministerio-200.png")
+        a(href="http://ec.europa.eu/fisheries/cfp/eff/index_es.htm", target="_blank")
+          img(src="/img/logo-fep-200.png")
+
+    block scripts
+      each source in theme.scripts
+        script(src=theme.url(source))
+      script.
+        var _gaq=[['_setAccount','UA-37723918-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+          s.parentNode.insertBefore(g,s)}(document,'script'));

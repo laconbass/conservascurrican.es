@@ -1,0 +1,4 @@
+mixin link-list(data, base_url, selected)
+  for item, name in data
+    - var classes = (name == selected)? 'selected' : ''
+    a(name=name, href=base_url+'/'+name, title=item.desc, class=classes)= item.caption

@@ -1,0 +1,28 @@
+/*
+  LAYOUT
+*/
+
+//h1 { color: red; }
+
+header {
+  + header {
+    nav {
+      a { }
+//      a + a + a { .cell(1%, 1.5em, 4); }
+    }
+  }
+}
+
+footer {
+  figure { .cell(1%, 0, 3, 2); }
+  figure + figure { .cell(1%, 0, 3); }
+  #logos_subvencion {
+    a:first-child {
+      .cell(1%, 0, 3);
+      float: none;
+      margin: 0 auto;
+    }
+    a + a { .cell(1%, 0, 3); }
+//    a { .cell(1%, 0, 2); }
+  }
+}

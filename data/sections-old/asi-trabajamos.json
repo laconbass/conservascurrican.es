@@ -1,0 +1,137 @@
+{
+  "$": {
+    "h2": "@title"
+    ,"ol": {
+      "@procesos": "li"
+    }
+  }
+  ,"blocks": {
+    "@procesos": {
+      "h3": "@title"
+      ,"ul": {
+        "@steps": "li"
+      }
+    }
+    ,"@steps": {
+      "img": {
+        "src": "@img_src"
+        ,"alt": "@title - @item_key"
+      }
+      ,"p": "@desc"
+    }
+  }
+  ,"data": {
+    "title": "El proceso productivo"
+    ,"img_url_base": "/img/procesos/general/hd"
+    ,"demo_img_url": "http://lorempixel.com/1900/1500/abstract"
+    ,"procesos": [
+      {
+        "title": "Recepción de la materia prima"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/recepcion-1.jpg"
+            ,"desc": "El pescado es adquirido en lonja, en las clásicas subastas de pescado, seleccionando los mejores ejemplares."
+          }
+          ,{
+            "img_src": "@img_url_base/recepcion-2.jpg"
+            ,"desc": "Una vez adquirido llega al obrador en un tiempo mínimo,  en contenedores de plástico alimentario."
+          }
+          ,{
+            "img_src": "@img_url_base/recepcion-3.jpg"
+            ,"desc": "A su llegada se realiza un control tanto documental como organoléptico. Los aceites y otros productos necesarios para las salsas son almacenados preservados de la luz."
+          }
+        ]
+      }
+      ,{
+        "title": "Limpieza, descabezado, eviscerado y corte"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/limpieza-1.jpg"
+            ,"desc": "Las cabezas se retiran sobre tajo de acero inoxidable y teflón."
+          }
+          ,{
+            "img_src": "@img_url_base/limpieza-2.jpg"
+            ,"desc": "Se extraen las vísceras y se corta en rodajas, todo manualmente."
+          }
+          ,{
+            "img_src": "@img_url_base/limpieza-3.jpg"
+            ,"desc": "El proceso finaliza con un último lavado de los troncos."
+          }
+        ]
+      }
+      ,{
+        "title": "Cocción"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/coccion-1.jpg"
+            ,"desc": "Los troncos se colocan en cacerolas totalmente cubiertos de agua a la que se le ha dado un grado de salinidad adecuado."
+          }
+          ,{
+            "img_src": "@img_url_base/coccion-2.jpg"
+            ,"desc": "La cocción se realiza lentamente, sin someterlo a presión, para así mantener la carne jugosa. \"Lomos jugosos como ventresca\"."
+          }
+          ,{
+            "img_src": "@img_url_base/coccion-3.jpg"
+            ,"desc": "Pasado el tiempo de cocción, se procede al vaciado de las cacerolas y se deja enfriar de manera natural sobre mesas de acero inoxidable."
+          }
+        ]
+      }
+      ,{
+        "title": "Troceado y envasado"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/envasado-1.jpg"
+            ,"desc": "Una vez finalizado el proceso de enfriamiento del pescado, se procede a retirar pieles, espinas y sangacho de forma manual."
+          }
+          ,{
+            "img_src": "@img_url_base/envasado-2.jpg"
+            ,"desc": "Se translada a una mesa donde se realiza el corte de lomos, también manual y a cuchillo."
+          }
+          ,{
+            "img_src": "@img_url_base/envasado-3.jpg"
+            ,"desc": "Se introduce en envases de vidrio. Ponemos especial mimo en este proceso, encajando y apretando los lomos manualmente sin escatimar producto. \"Vendemos pescado, no aceite\"."
+          }
+        ]
+      }
+      ,{
+        "title": "Adición de líquido de cobertura y cierre de envases"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/cobertura-1.jpg"
+            ,"desc": "Siempre se utiliza aceite de oliva, contando con los registros sanitarios correspondientes de fábrica. También se utilizan salsas tradicionales realizadas en el mismo obrador, en cocina específica a este fin. Se utilizan recetas heredadas de nuestras abuelas, como el escabeche."
+          }
+          ,{
+            "img_src": "@img_url_base/cobertura-2.jpg"
+            ,"desc": "El proceso de cierre se hace a mano, realizando una última inspección visual del contenido de los envases."
+          }
+        ]
+      }
+      ,{
+        "title": "Esterilizado"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/esterilizado-1.jpg"
+            ,"desc": "Realizado el cierre de los envases, se colocan en cestos de acero inoxidable."
+          }
+          ,{
+            "img_src": "@img_url_base/esterilizado-2.jpg"
+            ,"desc": "Los envases se introducen en autoclave, donde son sometidos a un baño de esterilización. Los envases esterilizados se dejan enfriar por procedimiento natural y una vez fríos se procede a su lavado."
+          }
+        ]
+      }
+      ,{
+        "title": "Almacenamiento"
+        ,"steps": [
+          {
+            "img_src": "@img_url_base/almacenamiento-1.jpg"
+            ,"desc": "Antes del almacenamiento del producto, se procede a colocar la etiqueta de lote y de marca, también manualmente."
+          }
+          ,{
+            "img_src": "@img_url_base/almacenamiento-2.jpg"
+            ,"desc": "Por último, se introduce en cajas adaptadas al transporte de este tipo de envases. El almacenaje se realiza en espacio físico independiente para garantizar su mejor conservación, en condiciones óptimas de luz y humedad."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$": {
+    "div": {
+      "h2": "Cómo contactar"
+      ,"ul": {
+        "@formas_contacto": "li"
+      }
+    }
+    ,"figure": {
+      "h2": "Dónde estamos"
+      ,"figure": { 
+        "iframe": {
+          "@": {
+            "width": "425", "height": "350",
+            "frameborder": "0", "scrolling": "no",
+            "marginheight": "0", "marginwidth": "0",
+            "src": "https://maps.google.es/maps/ms?msa=0&msid=217708588685721440865.0004d36c6821c5570a0da&ie=UTF8&t=h&ll=43.676757,-7.471678&spn=0.034147,0.222647&output=embed"
+          }
+        }
+        ,"small": "Ver <a href=\"https://maps.google.es/maps/ms?msa=0&amp;msid=217708588685721440865.0004d36c6821c5570a0da&amp;ie=UTF8&amp;t=h&amp;ll=43.676757,-7.471678&amp;spn=0.034147,0.222647&amp;source=embed\">Conservas Curricán S.L.</a> en un mapa más grande"
+      }
+      ,"p": "Estamos ubicadas en el Parque Empresarial de Camba, en Xove, un municipio costero de la Mariña Occidental de Lugo. Es un punto estratégico entre los puertos pesqueros de Burela, Celeiro y San Cibrao, lo que facilita la logística y la inmediatez en el proceso de manipulación y envasado del pescado."
+    }
+  }
+  ,"data": {
+    "formas_contacto": [
+      "<b>Dirección</b>: Conservas Artesanas Curricán S.L. - P.I. Camba 27880 Xove (Lugo)"
+      ,"<b>Teléfono</b>: <a href=\"tel:982596484\" title=\"LLamar por teléfono\">982596484</a>"
+      ,"<b>Email</b>: <a href=\"mailto:currican@conservascurrican.es\" title=\"Enviar un Email\">currican@conservascurrican.es</a>"
+    ]
+  }
+}

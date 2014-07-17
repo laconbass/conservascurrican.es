@@ -1,0 +1,83 @@
+//
+// COLORS
+
+// colores currican
+@logo-base: #13235b;
+@logo-cola: #007088;
+@logo-gris: #eae4da;
+@logo-gold: #b39b7a;
+@logo-gold: #cfb53b;
+@logo-area: #eace75;
+@lomos-aceite: #cf003d;
+@lomos-escabeche: #008b6c;
+@migas-aceite: #00a096;
+@cogote-aceite: #dfd200;
+@ventresca-aceite: #5e89c2;
+@pulpo: #6A0050;
+
+// colores custom
+@carne-bonito: #ffeccd;
+@dark: @logo-base;
+@light: lighten(@carne-bonito, 4%);
+
+// colores bloques principais
+@main-fg: lighten(desaturate(@logo-base, 25%), 4%);
+@section-bg: @carne-bonito;
+@foot-fg: @main-fg;
+@foot-bg: @section-bg;
+
+// colores cabeceira
+@banner-title-fg: @carne-bonito;
+
+// colores menu
+@menu-link-fg: darken(@logo-gris,14%);
+@menu-link-bg: @logo-base;
+@menu-link-hover-fg: @logo-base;
+@menu-link-hover-bg: lighten(@logo-cola, 7%);
+
+// colores selection e sombras
+@sele-fg: @main-fg;
+@sele-bg: darken(@section-bg, 5%);
+@shadow-light: @menu-link-fg;
+@shadow-dark: fade(#000, 60%);
+
+// Especificos por seccion
+@producto-bg: fade(@logo-gris, 50%);
+
+//
+// TEMPOS TRANSICION
+@time: .5s;
+
+//
+// DIMENSIONS
+
+// hueco entre o footer e o final da páxina
+@foot-gap: 2em;
+
+//
+// TIPOGRAFIAS
+
+/* ** FONTS ** */
+
+// Logo Currican: Harrington, Lucida
+// Outras: [google] Fresca, Andika, Ubuntu, Stoke
+
+@menu-font: "Aladin";
+@head-2-font: "Harrington";
+@head-3-font: "Aladin";
+@main-font: "Fresca";
+
+@font-face { 
+  font-family: "Harrington";
+  src: url(/extra/harrington/HARNGTON.eot?) format("eot")
+     , url(/extra/harrington/HARNGTON.woff) format("woff")
+     , url(/extra/harrington/HARNGTON.ttf) format("truetype")
+     , url(/extra/harrington/HARNGTON.svg#Harrington) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lucida";
+  src: url(/extra/LucidaCalligraphyItalic.ttf);
+}
+

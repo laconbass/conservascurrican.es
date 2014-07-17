@@ -1,0 +1,62 @@
+//
+// EFECTOS DE FONDO
+//
+
+.body-bg() {
+  background-color: #000;
+}
+
+.no-bg() {
+  background-image: none;
+}
+
+.banner-bg() {
+  background-image: url('/img/logo-borde-2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+
+.noisy-bg() {
+  a, a:link, a:visited, a.selected:hover, a.selected:active {
+    color: @logo-cola;
+  }
+  a:hover {
+    color: lighten(@logo-cola, 5%);
+  }
+  a:active {
+    color: @logo-base;
+  }
+  background-color: fade(@section-bg, 95%);
+  background-image: url('/img/pat-noise-50.png');
+}
+
+.loading-bg() {
+  background-color: fade(@section-bg, 95%);
+  background-image: url('/img/loading-currican-100.gif'), url('/img/pat-noise-50.png');
+  background-repeat: no-repeat, repeat;
+  background-position: center 2.5em, top left;
+}
+
+.stunning-bg() {
+  @i: '/img/fondo-cabecera-q50.jpg';
+  background-image: url(@i);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 30%;
+}
+
+.mask-bg() {
+  @s1: 5%; @c1: transparent;
+  @s2: 50%; @c2: black;
+  // Chrome, Safari 4+
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(@s1, @c1), color-stop(@s2, @c2));
+  // Chrome 10-25, iOS 5+, Safari 5.1+
+  background-image: -webkit-linear-gradient(top, @c1 @s1, @c2 @s2);
+  // Firefox 3.6-15
+  background-image: -moz-linear-gradient(top, @c1 @s1, @c2 @s2);
+  // Opera 11.10-12.00
+  background-image: -o-linear-gradient(top, @c1 @s1, @c2 @s2);
+  // Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  background-image: linear-gradient(to bottom, @c1 @s1, @c2 @s2);
+}

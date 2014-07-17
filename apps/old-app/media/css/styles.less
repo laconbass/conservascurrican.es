@@ -1,0 +1,471 @@
+/*
+  TEXT, COLORS
+*/
+
+html, button, input, select, textarea {
+  color: @main-fg;
+  font-family: @main-font;
+}
+
+body { background-color: @body-bg; }
+
+::-moz-selection,
+::selection {
+  text-shadow: none;
+  background: @sele-bg;
+}
+
+header {
+  background-color: @head-bg;
+
+  figure {
+    color: @logo-base;
+    hgroup {
+      line-height: normal;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: Harrington;
+      font-size: 2.8em;
+    }
+    h2 {
+      text-transform: lowercase;
+      font-family: Lucida;
+      font-size: 1.2em;
+    }    
+  }
+  & + header {
+    background-color: @menu-bg;
+    nav {
+      font-family: @menu-font;
+      a {
+        text-decoration: none;
+        white-space: nowrap;
+        text-align: center;
+        color: @menu-link-fg;
+        background-color: @menu-link-bg;
+
+        &.selected {
+          color: @menu-link-hover-fg;
+          background-color: @menu-link-hover-bg;
+        }
+      }
+    }
+  }
+}
+
+div[role="main"] {
+  background-color: @main-bg;
+  section {
+    background-color: fade(@section-bg, 83%);
+    color: lighten(@main-fg, 8%);
+
+    h2, h3, h4, h5 { font-weight: normal; }
+    h2 {
+      color: darken(@main-fg, 4%);
+      font-family: @head-2-font;
+      font-size: 2.5em;
+    }
+    h3 {
+      color: @main-fg;
+      font-family: @head-3-font;
+      font-size: 2em;
+    }
+    h4 { font-family: Harrington; font-size: 1.7em; }
+    h5 { font-size: 1.2em; }
+    p, li { font-size: 1.1em; }
+    p { text-align: justify; }
+    img {
+      background-color: @main-fg;
+      .border-radius(10px);
+    }
+  }
+  #productos {
+    article {
+      figure figure img {
+        background-color: @producto-bg;
+      }
+      hgroup {
+        h4, h5 {
+          background-color: @logo-base;
+          color: darken(@logo-gris, 10%);
+        }
+        h4 { font-size: 2em; } 
+      }
+      ul {
+        list-style-type: none;
+        li em { font-style: normal }
+      }
+    }
+    #lomos-aceite hgroup {
+          background-color: @lomos-aceite; }
+    #lomos-escabeche hgroup {
+          background-color: @lomos-escabeche; }
+    #migas hgroup {
+          background-color: @migas-aceite; }
+    #cogote hgroup {
+          background-color: @cogote-aceite; }
+    #ventresca {
+      hgroup {
+          background-color: darken(@logo-gold, 12%); }
+      h4, h5 {
+        background-color: lighten(@ventresca-aceite, 15%);
+        color: @logo-base;
+      }
+    }
+  }
+  #asi-trabajamos {
+    ol {
+      counter-reset: li;
+      list-style: none;
+      padding: 0;
+      li {
+        h3 {
+          
+          &, &:before {
+            font-family: @head-3-font;
+          }
+          &:before {
+	    content: counter(li)+")";
+	    counter-increment: li;
+            /*display: inline-block;
+            width: 1em;
+            height: 1em;
+            line-height: 1em;
+            text-align: center;*/
+            margin-right: .3em;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 0.8em;
+  text-align: right;
+
+  color: darken(@foot-fg, 15%);
+  background-color: @foot-bg;
+  a { color: lighten(@foot-fg, 15%); }
+}
+
+/*
+  MOUSE EFFECTS
+*/
+
+header {
+  nav a:hover {
+    color: @menu-link-hover-fg;
+    background-color: @menu-link-hover-bg;
+    .transition(all, 1s);
+  }
+}
+
+/*
+  BG IMAGES, SPRITES, BORDERS
+*/
+
+header {
+  background-image: url(/img/wide-wave-600.png);
+  background-repeat: repeat-x;
+  background-position: left center;
+
+  hgroup {
+  //  background: url('/img/logo-320.png') no-repeat top left;
+  }
+  & + header {
+    background-image: none;
+    nav a {
+      .border-radius(6px);
+    }
+  }
+}
+
+div[role=main] {
+  background-image: url(/img/sand-texture-200.png);
+  section {
+    .border-radius();
+  }
+  #productos {
+    hgroup {
+      @rx: 4px;
+      .border-radius(@rx);
+       h4 { .border-radius(@rx @rx 0 0); }
+       h5 { .border-radius(0 0 @rx @rx); }
+    }
+    img {
+      .border-radius(10px);
+    }
+  }
+}
+
+/*
+img.logo-currican {
+  //background-image: url(/img/logos-currican-150.png);
+}
+img.logo-currican.aceite {}
+img.logo-currican.escabeche {}
+img.logo-currican.migas {}
+img.logo-currican.cogote {}
+img.logo-currican.ventresca {}*/
+
+/*
+  LAYOUT
+*/
+
+header {
+  &:first-child {
+//    padding: 1% 0;
+    figure {
+      .wrapper(flexible, inline);
+      a, hgroup { .cell(inline); }
+      a { margin: 1%; }
+      hgroup {
+        h1, h2 { margin: 0 0 0 6px; }
+      }
+    }
+  }
+  + header {
+    nav {
+      .wrapper(flexible);
+      a {
+        .cell(.5%, 1.8em, 3);
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+div[role=main] {
+  .wrapper(flexible);
+  min-height: 6em;
+  section {
+    .cell(1%, 2.5em, 1);
+    display: none;
+    margin-bottom: 2%;
+    h2, h3 { margin: .5em 0; }
+    h4, h5 { margin: .3em 0; }
+    img {
+      display: block;
+      padding: 1%;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+  #contacto {
+    figure {
+      max-width: 100%;
+/*      float: left;
+      margin-right: 1em;*/
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+  #noticias {
+    p { margin-left: 2em; }
+    p:before { content: "» "; }
+  }
+  #productos {
+    article {
+     // .cell(1%, 0, 2); quizás sen imaxe
+      > figure {
+        @pad: 1.5em;
+        @mar: 3%;
+ //       @box: 6px;
+
+        .wrapper(fixed, (100% - @mar), grid);
+        margin: (@pad * 2) 0;
+        overflow: visible;
+
+        > figure {
+          .wrapper(absolute);
+          min-width: @pad*10;
+          #lomos-aceite & { min-width: @pad*15; }
+          top: 0; bottom: 0;
+          left: (@pad * 2);
+
+          img {
+            margin-top: -@pad;
+            width: inherit;
+            max-height: @pad*7;
+            display: block;
+            float: left;
+          }
+        }
+        hgroup {
+          .wrapper(fixed, 100% - @mar);
+          overflow: visible;
+          h4, h5 {
+            margin: @mar;
+            margin-left: @mar;
+          } 
+          .calc(@pad) {
+            padding-left: @pad;
+            width: 100% - @pad;
+          }
+          h4 {
+            margin-bottom: 0;
+            .calc(40%);
+          }
+          h5 {
+            margin-top: 0;
+            .calc(46%);
+          }
+        }
+      }
+      ul {
+        padding: 0 2em;
+        li {
+          @indent: 5.8em;
+          padding-left: @indent;
+          em {
+            display: inline-block;
+            
+            margin-left: -@indent;
+            width: @indent;
+          }
+        }
+      }
+    }
+  }
+  #asi-trabajamos {
+    ol {
+      padding: 0;
+      li {
+        .wrapper(flexible);
+        h3 {
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          li {
+            .wrapper(flexible);
+            img { .cell(1%, 1%, 3, 2); }
+            p { .cell(1%, 1%, 3); }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  .wrapper(flexible);
+  padding-top: .5em;
+  figure { .cell(1%, 0, 3); }
+  figure + figure { .cell(1%, 0, 3, 2); }
+  a, address {
+  }
+  #logos_subvencion {
+    a { text-align: center; .wrapper(flexible); }
+    img { .cell(0, 2em, 1); }
+  }
+}
+
+/* menu expanded */
+    
+    /* menu collapsed state */
+/*    header.collapsed nav a + a { margin-left: 4px; }*/
+/*    header.collapsed nav a + a + a + a { margin-left: 4px; }*/
+    
+    
+/*    header nav a + a {
+      position: absolute;
+      left: 490px;
+      width: 470px;
+      height: 90px;
+      -webkit-transition-property: top, left, width;
+      -webkit-transition-duration: .25s, .25s, .25s;
+      -webkit-transition-delay: 0, .25s, .25s;
+    }
+    header nav a + a + a { top: 100px; }
+    header nav a + a + a + a { top: 200px; }
+    header nav a + a + a + a + a { top: 300px; }         wide screen */
+/* colapsed */
+/*    header.collapsed nav a + a {
+      width: 110px;
+      top: 0;
+      -webkit-transition-property: width, left, top, background-color;
+      -webkit-transition-duration: .25s, .25s, .25s, .5s;
+      -webkit-transition-delay: 0, 0, .25s, 0;
+    }
+    header.collapsed nav a + a + a {
+      left: 610px; }
+    header.collapsed nav a + a + a + a {
+      left: 730px; }
+    header.collapsed nav a + a + a + a + a {
+      left: 850px; }                                     wide screen */
+
+  /* sprites 
+  header nav a {
+    background-image: url('http://lorempixel.com/960/184/food/1');
+    background-color: #0cc;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  header nav a + a {
+    left: 194px;
+    background-position: -194px 0;
+  }
+  header nav a + a + a {
+    left: 388px;
+    background-position: -388px 0;
+  }
+  header nav a + a + a + a {
+    left: 582px;
+    background-position: -582px 0;
+  }
+  header nav a + a + a + a + a {
+    left: 776px;
+    background-position: -776px 0;
+  }*/
+
+
+/*
+  SPECIAL EFFECTS, FILTERS, TRANSITIONS
+*/
+
+.csstransitions {
+  header { .transition(background-color, @time); }
+
+  header + header {
+      nav {
+        a {
+         .transition(all, @time);
+        }
+      }
+  }
+}
+.boxshadow {
+  @color: fade(#000, 50%);
+  nav {
+    a {
+      .box-shadow(2px, 3px, 2px, 0, @color);
+      &:active {
+        .box-shadow(inset, 2px, 2px, 2px, 0, @color);
+      }
+//      &:focus { outline: 0px; }
+    }
+  }
+  header + header,
+  div[role=main] {
+    // enable z-index
+    position: relative;
+    .box-shadow(0, 6px, 8px, 0, @color);
+  }
+  header + header { z-index: 5; }
+  div[role=main] { z-index: 4; }
+  footer { z-index: 3; }
+  section {
+    .box-shadow(3px, 3px, 8px, 0, @color);
+  }
+  #productos {
+      hgroup, hgroup h4, hgroup h5 {
+        @dim: 3px;
+        @blur: 2px;
+        .box-shadow(@dim, @dim, @blur, 0, @color);
+      }
+  }
+}

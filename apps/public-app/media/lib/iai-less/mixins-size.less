@@ -1,0 +1,63 @@
+//
+// Width: calculate width relative to "base size / elements"
+//
+// param `m`: total margin (x-axis) of each element
+// param `p`: total padding (x-axis) of each element
+// param `n`: number of elements (columns)
+// TODO param `s`: column span for this element
+// param `b`: base size, usually parent's width
+
+.width( @m, @p, @n, @s, @b ) {
+  width: ( ( @b - @n * @m - @n * @p ) / @n );
+}
+
+.width( @n ) when( isnumber(@n) ) {
+  .width( 0, 0, @n, 1, 100% );
+}
+
+.width( @m, @p, @n, @s: 100% ) when( isnumber( @m ) )
+  and( isnumber( @p ) ) and( isnumber( @n ) ) {
+  .width( @m, @p, @n, 1, @s );
+}
+
+//
+// Height: calculate height relative to "base size / elements"
+//
+// param `m`: total margin (y-axis) of each element
+// param `p`: total padding (y-axis) of each element
+// param `n`: number of elements (rows)
+// TODO param `s`: row span for this element
+// param `b`: base size, usually parent's height
+//
+// NOTE: remember percentage margin / padding values are 
+//       calculated in base to parent't width, according
+//       to W3C spec. See the link below for further information
+//
+// http://www.w3.org/wiki/The_CSS_layout_model_-_boxes_borders_margins_padding#Putting_whitespace_around_an_object:_the_margin-top.2C_margin-right.2C_margin-bottom.2C_margin-left.2C_and_margin_properties
+
+.height( @m, @p, @n, @s, @b ) when not( iskeyword( @m ) ) {
+  m: @m;
+  p: @p;
+  n: @n;
+  b: @b;
+  height: ( ( @b - @n * @m - @n * @p  ) / @n );
+}
+.height( line, @m, @p, @n, @s, @b ) {
+  line-height: ( ( @b - @n * ( @m + @p ) ) / @n );
+}
+
+.height( @n ) when( isnumber(@n) ) {
+  .height( 0, 0, @n, 1, 100% );
+}
+
+.height( @m, @p, @n, @b ) when( isnumber( @m ) )
+  and( isnumber( @p ) ) and( isnumber( @n ) )
+  and( isnumber( @b ) ) {
+  .height( @m, @p, @n, 1, @b );
+}
+
+.height( line, @m, @p, @n, @b ) when( isnumber( @m ) )
+  and( isnumber( @p ) ) and( isnumber( @n ) )
+  and( isnumber( @b ) ) {
+  .height( line, @m, @p, @n, 1, @b );
+}

@@ -1,0 +1,34 @@
+// por debaixo de 320px
+@cp0: ( 320 / 16 * 1em );
+@media only screen and ( max-width: @cp0 ) {
+  header {
+    background-position: center 26%;
+    a[href="/"] {
+      margin-right: 0;
+      font-size: 89%;
+      padding-left: 5em;
+    }
+  }
+}
+
+// 350px
+@cp1: ( 400 / 16 * 1em );
+@media only screen and ( min-width: @cp1 ) {
+  header a[href="/"] { font-size: 110%; }
+}
+
+// 480px
+@cp2: ( 480 / 16 * 1em );
+@media only screen and ( min-width: @cp2 ) {
+  header a[href="/"] { font-size: 114%; }
+}
+// 540px
+@cp3: ( 540 / 16 * 1em );
+@media only screen and ( min-width: @cp3 ) {
+  header a[href="/"] { font-size: 122%; }
+}
+// segundo axuste, 480px
+@cp4: ( 600 / 16 * 1em );
+@media only screen and ( min-width: @cp4 ) {
+  header a[href="/"] { font-size: 130%; }
+}

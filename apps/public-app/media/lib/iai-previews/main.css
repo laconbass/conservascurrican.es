@@ -1,0 +1,52 @@
+html {
+  padding-bottom: 5em;
+}
+#iai-previews-toolbar {
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #6a40bf;
+  background-image: -moz-linear-gradient(top, rgba(128, 128, 128, 0.75), transparent);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(128, 128, 128, 0.75)), color-stop(100%, transparent));
+  background-image: -webkit-linear-gradient(top, rgba(128, 128, 128, 0.75), transparent);
+  background-image: -ms-linear-gradient(top, rgba(128, 128, 128, 0.75), transparent);
+  background-image: -o-linear-gradient(top, rgba(128, 128, 128, 0.75), transparent);
+  background-image: linear-gradient(to bottom, rgba(128, 128, 128, 0.75), transparent);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=rgba(128, 128, 128, 0.75), endColorstr=transparent, GradientType=0);
+}
+#iai-previews-toolbar button {
+  position: relative;
+  margin: .6em 0 .5em .8em;
+  padding: .6em .9em;
+  border: 1px solid #220066;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  color: #220066;
+  background-color: #5400ff;
+  background-image: -moz-linear-gradient(top, #bb99ff, #5400ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bb99ff), color-stop(100%, #5400ff));
+  background-image: -webkit-linear-gradient(top, #bb99ff, #5400ff);
+  background-image: -ms-linear-gradient(top, #bb99ff, #5400ff);
+  background-image: -o-linear-gradient(top, #bb99ff, #5400ff);
+  background-image: linear-gradient(to bottom, #bb99ff, #5400ff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#bb99ff, endColorstr=#5400ff, GradientType=0);
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  -ms-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+#iai-previews-toolbar button.active {
+  cursor: default;
+}
+#iai-previews-toolbar button:hover {
+  top: -0.3em;
+}
+#iai-previews-toolbar button.active {
+  top: -2em;
+}

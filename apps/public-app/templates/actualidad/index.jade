@@ -1,0 +1,22 @@
+h2 Actualidad
+
+- var all = categoryList[0]
+- var all_id = all.toLowerCase()
+
+nav.section-menu
+  each category in categoryList
+    - var id = category.toLowerCase()
+    - var c = (content_id == id)? 'selected':''
+    a(href=section_url+"/"+id, id=id, class=c)= category
+  
+
+each post in postList
+  - category_id = post.category.toLowerCase()
+  - var c = all + ' ' + post.category
+  - c += (post.slug == content_id || content_id == category_id || content_id == all_id)? ' selected':''
+  article(id=post.slug, class=c)
+    figure
+      h3= post.title
+      em= post.date.get_prn()
+      a(href=section_url+"/"+post.slug) +
+    div!= markdown(post.content)

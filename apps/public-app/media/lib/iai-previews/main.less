@@ -1,0 +1,24 @@
+@import "iai-styles.less";
+
+html { padding-bottom: 5em; }
+
+#iai-previews-toolbar {
+  z-index: 99;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  .iai-toolbar();
+
+  button {
+    position: relative;
+    margin: .6em 0 .5em .8em;
+    .iai-button();
+
+    &:hover { top: -.3em; }
+    &.active { top: -2em; }
+
+    .transition( all .1s ease-in );
+  }
+}

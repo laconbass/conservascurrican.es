@@ -1,0 +1,29 @@
+body {
+}
+
+header {
+  nav {
+    margin-top: 30%;
+    a {
+      @m: .5%;
+      margin-left: @m;
+      .width( @m * 7 / 6, 0, 6);
+    }
+  }
+}
+
+#asi-trabajamos {
+  nav {
+    .clearfix();
+    a { width: 50%; float: left; }
+    img { max-width: 90%; }
+    h3 { margin-right: 0; }
+    a:first-child {
+      h3 { bottom: .5em; }
+    }
+    a + a {
+      h3 { z-index: 2; }
+      img { position: relative; top: 1em; z-index: 1; }
+    }
+  }
+}

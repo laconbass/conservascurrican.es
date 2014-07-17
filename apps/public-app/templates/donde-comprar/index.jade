@@ -1,0 +1,38 @@
+h2 Dónde comprar
+
+nav.section-menu
+  each location_type, location_type_id in section_data
+    - var c = (location_type_id == content_id)? ' selected':''
+    a(
+      href=section_url+"/"+location_type_id
+      class=c
+      title=location_type.intro_text
+    )= location_type.caption
+
+each location_type, location_type_id in section_data
+  - var c = (location_type_id == content_id)? ' selected':''
+  article(id=location_type_id, class=c)
+    h3= location_type.caption
+    p= location_type.intro_text
+    each area_locations, area_name in location_type.data
+      hr
+      h4= area_name
+      dl
+        each location, location_id in area_locations
+          dt
+            strong= location.name
+            if location.logo_src
+              img(src=location.logo_src)
+          dd
+            dl
+              each field_prn, field_name in location_type.fields
+                if location[field_name] && field_prn
+                  dt= field_prn
+                if location[field_name]
+                  dd
+                    if field_name == 'phone' || field_name == 'phone2'
+                      a(href="tel:+34"+location.phone)= location.phone
+                    else if field_name == 'email'
+                      a(href="mailto:"+location.email)= location.email
+                    else
+                      !{location[field_name]}

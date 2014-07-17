@@ -1,0 +1,45 @@
+//
+//
+@import "mixins-fx.less";
+
+//
+// Default iai color
+
+@iai-color: #5400ff;
+
+
+//
+// default Effects
+
+.iai-toolbar( @base-color: @iai-color ) {
+  @base: desaturate( @base-color, 50% );
+  @gt: fade( greyscale( @base-color ), 75% );
+
+  background: @base;
+  .gradient-to-bottom( @gt, transparent );
+}
+
+.iai-button( @base-color: @iai-color ) {
+  @dark: darken( @base-color, 30% );
+  @light: lighten( @base-color, 30% );
+
+  padding: .6em .9em;
+  border: 1px solid @dark;
+  .border-radius();
+
+  color: @dark;
+  background-color: @base-color;
+  .gradient-to-bottom( @light, @base-color );
+
+  &.active { cursor: default; }
+}
+
+.gradient-to-bottom( @gt, @gb ) {
+  background-image: -moz-linear-gradient(top, @gt, @gb);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @gt), color-stop(100%, @gb));
+  background-image: -webkit-linear-gradient(top, @gt, @gb);
+  background-image: -ms-linear-gradient(top, @gt, @gb);
+  background-image: -o-linear-gradient(top, @gt, @gb);
+  background-image: linear-gradient(to bottom, @gt, @gb);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@gt, endColorstr=@gb, GradientType=0);
+}

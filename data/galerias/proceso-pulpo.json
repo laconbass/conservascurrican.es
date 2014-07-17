@@ -1,0 +1,99 @@
+{
+  "title": "El pulpo"
+  ,"thumb": "/img/productos/pulpo-aceite.jpg"
+  ,"desc": "El proceso que empleamos para elaborar el pulpo en conserva, paso a paso."
+  ,"data": [
+      {
+        "title": "Preparación"
+        ,"steps": [
+          {
+            "img_src": "1-preparacion-1.jpg"
+            ,"desc": "Antes de proceder con la elaboración, los pulpos son congelados en bolsas independientes para romper las fibras musculares."
+          }
+          ,{
+            "img_src": "1-preparacion-2.jpg"
+            ,"desc": "Se mantienen congelados el tiempo mínimo posible, y se procede con la limpieza."
+          }
+        ]
+      }
+      ,{
+        "title": "Lavado"
+        ,"steps": [
+          {
+            "img_src": "2-lavado-1.jpg"
+            ,"desc": "Los ejemplares se evisceran y lavan minuciosamente uno a uno."
+          }
+          ,{
+            "img_src": "2-lavado-2.jpg"
+            ,"desc": "La limpieza se realiza con abundante agua, tentáculo a tentáculo."
+          }
+        ]
+      }
+      ,{
+        "title": "Cocción"
+        ,"steps": [
+          {
+            "img_src": "3-coccion-1.jpg"
+            ,"desc": "La cocción se realiza del modo tradicional, en ollas con agua hirviendo."
+          }
+          ,{
+            "img_src": "3-coccion-2.jpg"
+            ,"desc": "El pulpo se sumerge en repetidas ocasiones hasta conseguir el \"rizado\" de los tentáculos y la piel agranatada."
+          }
+          ,{
+            "img_src": "3-coccion-3.jpg"
+            ,"desc": "Una vez cocido se deja escurrir y enfriar de forma natural, a temperatura ambiente."
+          }
+        ]
+      }
+      ,{
+        "title": "Troceado y envasado"
+        ,"steps": [
+          {
+            "img_src": "4-envasado-1.jpg"
+            ,"desc": "Una vez frío, se cortan los medallones y las puntas manualmente."
+          }
+          ,{
+            "img_src": "4-envasado-2.jpg"
+            ,"desc": "Los botes se rellenan con un fondo de aceite antes de introducir el producto."
+          }
+          ,{
+            "img_src": "4-envasado-3.jpg"
+            ,"desc": "Y finalmente se embota completamente a mano."
+          }
+        ]
+      }
+      ,{
+        "title": "Adición de líquido de cobertura y cierre de envases"
+        ,"steps": [
+          {
+            "img_src": "5-cobertura-1.jpg"
+            ,"desc": "Llegado este punto, es el momento de rellenar la cobertura restante."
+          }
+          ,{
+            "img_src": "5-cobertura-2.jpg"
+            ,"desc": "Siempre se utiliza aceite de oliva virgen extra, y el proceso se hace también a mano."
+          }
+        ]
+      }
+      ,{
+        "title": "Esterilizado"
+        ,"steps": [
+          {
+            "img_src": "6-final-1.jpg"
+            ,"desc": "Una vez rellenados los envases, se cierran y se someten a un baño de esterilización en autoclave."
+          }
+        ]
+      }
+      ,{
+        "title": "Almacenamiento y Distribución"
+        ,"steps": [
+          {
+            "img_src": "6-final-2.jpg"
+            ,"desc": "Una vez finalizado este último paso, el producto está listo para su distribución."
+          }
+        ]
+      }
+  ]
+}
+

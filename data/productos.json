@@ -1,0 +1,62 @@
+{
+  "bonito": {
+    "title": "Bonito del norte"
+    ,"description": "Una pura delicia del mar. Son pescados uno a uno con el arte del “curricán” y rematados antes de tocar la borda. La costera se realiza entre los meses de julio y octubre, época en que los ejemplares están engordados de arenque y caballa y nos ofrecen una carne jugosa e infiltrada de grasa. Las piezas llegan a la lonja de Burela sin magulladuras ni golpes, primera garantía de calidad para una carne firme y blanca, se seleccionan en base a su calidad y talla y son recogidas el mismo día del arribe del bonitero."
+    ,"articles": {
+          "lomos-aceite": {
+            "title": "Lomos"
+            , "subtitle": "en aceite de oliva"
+            ,"logo_src": "/img/productos/lomos-aceite.jpg"
+            ,"description": "Tacos de lomo perfectamente limpio, cortados a cuchillo y encajados dentro del frasco. Se riegan con aceite de oliva de primera calidad."
+            ,"ingredients": "Lomo de bonito, aceite y sal."
+            ,"presentation": "Botes de 350ml o 450ml."
+          }
+          ,"lomos-escabeche": {
+            "title": "Lomos"
+            , "subtitle": "en escabeche"
+            ,"logo_src": "/img/productos/lomos-escabeche.jpg"
+            ,"description": "Tacos de lomo cubiertos de un escabeche tradicional, suave y claro, que extrae el mejor sabor del bonito, en vez de ocultarlo."
+            ,"ingredients": "Lomo de bonito, aceite, vinagre, vino, sal y especias."
+            ,"presentation": "Botes de 350ml o 450ml."
+          }
+          ,"migas": {
+            "title": "Migas"
+            , "subtitle": "en aceite de oliva"
+            ,"logo_src": "/img/productos/migas.jpg"
+            ,"description": "Trozos, migas, porciones que se producen al confeccionar los tacos de lomo. Especialmente indicadas para platos cocinados y para ensaladillas."
+            ,"ingredients": "Migas de bonito, aceite de oliva y sal."
+            ,"presentation": "Botes de 450ml."
+          }
+          ,"cogote": {
+            "title": "Cogote"
+            , "subtitle": "en aceite de oliva"
+            ,"logo_src": "/img/productos/cogote.jpg"
+            ,"description": "Una sola rodaja de testuz, nos ofrece dos pequeños lomos de carne rosada, completamente infiltrada de grasa. Es un bocado ideal para los amantes del pescado intenso y jugoso."
+            ,"ingredients": "Cogote de bonito en taco, aceite de oliva y sal."
+            ,"presentation": "Botes de 350ml o 450ml."
+          }
+          ,"ventresca": {
+            "title": "Ventresca"
+            , "subtitle": "en aceite de oliva"
+            ,"logo_src": "/img/productos/ventresca.jpg"
+            ,"description": "Una auténtica joya al paladar. Doscientos gramos largos de ventresca en cada bote, sin separar las láminas, para que conserve la película de grasa intermedia que le potencia el sabor y la preserva de la oxidación."
+            ,"ingredients": "Ventresca de bonito, aceite de oliva y sal."
+            ,"presentation": "Botes de 350ml."
+          }
+    }
+  },
+  "pulpo": {
+    "title": "Pulpo \"octopus vulgaris\"",
+    "description": "Pulpos de una costa rocosa como la de Lugo, al que la casualidad del clima, el ecosistema marino y la técnica de captura mediante nasas, hacen tener unas cualidades únicas e incomparables.",
+    "articles": {
+      "pulpo-aceite": {
+        "title": "Pulpo",
+        "subtitle": "en aceite de oliva virgen extra",
+        "logo_src": "/img/productos/pulpo-aceite.jpg",
+        "description": "Una ración de pulpo cocido conservado en aceite de oliva virgen extra. Ideal para tomar con unos granos de sal y pimentón.",
+        "ingredients": "Medallones y puntas de pulpo, aceite de oliva y sal.",
+        "presentation": "Botes de 230ml."
+      }
+    }
+  }
+}
