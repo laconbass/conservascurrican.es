@@ -57,13 +57,10 @@ audio:not([controls]) {
 html {
   font-size: 100%;
   /* 1 */
-
   -webkit-text-size-adjust: 100%;
   /* 2 */
-
   -ms-text-size-adjust: 100%;
   /* 2 */
-
 }
 /*
  * Addresses `font-family` inconsistency between `textarea` and other form
@@ -262,10 +259,8 @@ nav ol {
 img {
   border: 0;
   /* 1 */
-
   -ms-interpolation-mode: bicubic;
   /* 2 */
-
 }
 /*
  * Corrects overflow displayed oddly in IE 9.
@@ -307,14 +302,11 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   white-space: normal;
   /* 2 */
-
   *margin-left: -7px;
   /* 3 */
-
 }
 /*
  * 1. Corrects font size not being inherited in all browsers.
@@ -328,16 +320,12 @@ select,
 textarea {
   font-size: 100%;
   /* 1 */
-
   margin: 0;
   /* 2 */
-
   vertical-align: baseline;
   /* 3 */
-
   *vertical-align: middle;
   /* 3 */
-
 }
 /*
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -362,13 +350,10 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
   *overflow: visible;
   /* 4 */
-
 }
 /*
  * Re-set default cursor for disabled elements.
@@ -387,16 +372,12 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
   *height: 13px;
   /* 3 */
-
   *width: 13px;
   /* 3 */
-
 }
 /*
  * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -406,11 +387,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /*
@@ -436,10 +415,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -459,7 +436,6 @@ table {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-
   *text-indent: -9999px;
 }
 .ir:before {
@@ -522,10 +498,8 @@ table {
 .clearfix:after {
   content: " ";
   /* 1 */
-
   display: table;
   /* 2 */
-
 }
 .clearfix:after {
   clear: both;
@@ -647,7 +621,7 @@ header nav a {
   margin-top: .25em;
   margin-left: 1%;
   width: 48.5%;
-  line-height: 2.8333333333333335em;
+  line-height: 2.83333333em;
   text-align: center;
   text-decoration: none;
   font-size: 1.4em;
@@ -870,7 +844,6 @@ footer #logos_subvencion img {
   max-width: 100%;
   /*      float: left;
       margin-right: 1em;*/
-
 }
 #contacto figure iframe {
   width: 100%;
@@ -1049,7 +1022,6 @@ footer #logos_subvencion img {
             height: 1em;
             line-height: 1em;
             text-align: center;*/
-
   margin-right: .3em;
 }
 #asi-trabajamos ol li ul {
@@ -1115,7 +1087,7 @@ footer #logos_subvencion img {
   }
   header nav a {
     margin-left: 0.5%;
-    width: 16.083333333333332%;
+    width: 16.08333333%;
   }
   #asi-trabajamos nav {
     *zoom: 1;
